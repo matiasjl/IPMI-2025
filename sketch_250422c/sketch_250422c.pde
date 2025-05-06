@@ -16,13 +16,15 @@ void setup(){  //Evento: se ejecuta CUANDO se inicia el programa
 
 void draw(){  //Evento: se ejecuta CUANDO se ejecuta el setup, reiteradamente 60fps
   // ACTUALIZO las variables
-  posXnombre = posXnombre + 5;  //suma un numero a la variable = OPERACIONES MATEMATICAS HACEN ANIMACIONES
+  posXnombre = posXnombre + 10;  //suma un numero a la variable = OPERACIONES MATEMATICAS HACEN ANIMACIONES
   println(posXnombre);
   
   // DIBUJO los textos, imagenes, primitivas
-  fill( rojo );
   textSize( 36 );  // tamano
-  text( nombre, posXnombre, height/2 );  //PARA REVISAR LEGIBILIDAD
+  fill( 128 );
+  text( "Matias", 250, 250 );  
+  fill( rojo );
+  text( nombre, posXnombre, height/2 );  
 }
 
 void keyPressed(){  //Evento: se ejecuta CUANDO se toca una tecla del teclado
